@@ -1,0 +1,22 @@
+# --- Core Image Processing ---
+opencv-python>=4.10.0
+pillow>=11.0.0
+scikit-image>=0.24.0
+
+# --- Math & Data ---
+numpy>=1.26.4,<3.0.0
+scipy>=1.14.0
+matplotlib>=3.9.0
+
+# --- Machine Learning / Advanced Vision ---
+# Menggunakan mediapipe sebagai pengganti dlib (opsional)
+mediapipe>=0.10.0 
+pytesseract>=0.3.10
+
+# --- GUI Ecosystem ---
+PyQt5>=5.15.9
+pyqt5-tools>=5.15.9
+
+# --- Utilities ---
+python-dotenv>=1.0.1
+setuptools>=70.0.0
