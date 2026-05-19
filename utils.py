@@ -59,15 +59,46 @@ def deteksi_cerdas(img_bgr):
             else:
                 jenis = "Jeruk Umum / Sunkist"
 
-            if avg_hue > 45:
-                status = "Belum Matang"
-                warna = (0, 0, 255)
-            elif 25 <= avg_hue <= 45:
-                status = "Setengah Matang"
-                warna = (0, 255, 255)
-            else:
-                status = "Matang"
-                warna = (0, 255, 0)
+            if jenis == "Jeruk Bali":
+                if avg_hue > 38:
+                    status = "Belum Matang"
+                    warna = (0, 180, 0)      
+                elif 26 <= avg_hue <= 38:
+                    status = "Setengah Matang"
+                    warna = (0, 220, 180)
+                else:
+                    status = "Matang"
+                    warna = (180, 255, 255)
+                    
+            elif jenis == "Lemon":
+                if avg_hue > 40:
+                    status = "Belum Matang"
+                    warna = (0, 180, 0)
+                elif 28 <= avg_hue <= 40:
+                    status = "Setengah Matang"
+                    warna = (0, 255, 255)
+                else:
+                    status = "Matang"
+                    warna = (0, 255, 255)
+                    
+            elif jenis == "Jeruk Umum / Sunkist":
+                if avg_hue > 35:
+                    status = "Belum Matang"
+                    warna = (0, 180, 0)
+                elif 22 <= avg_hue <= 35:
+                    status = "Setengah Matang"
+                    warna = (0, 165, 255)
+                else:
+                    status = "Matang"
+                    warna = (0, 100, 255)
+                    
+            else: # Default untuk Jeruk Nipis / Limau
+                if avg_hue > 38:
+                    status = "Belum Matang"
+                    warna = (0, 100, 0)
+                else:
+                    status = "Matang"
+                    warna = (0, 220, 0)
 
             daftar_buah.append({
                 'box': (x, y, w, h),

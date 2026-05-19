@@ -7,7 +7,7 @@ from utils import deteksi_cerdas, isolasi_objek
 # Konfigurasi Halaman Web
 st.set_page_config(page_title="Multi-Orange Classifier Pro", layout="wide")
 
-st.title("🍊 Advanced Citrus Classifier")
+st.title("Sistem Klasifikasi Tingkat Kematangan Buah Jeruk")
 st.write("Sistem Klasifikasi Jenis Jeruk & Tingkat Kematangan Berdasarkan Fitur Geometri (Circularity) dan Warna (HSV).")
 st.divider()
 
